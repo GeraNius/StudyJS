@@ -1,10 +1,10 @@
 <html>
-	<head>		
-	</head>
+	<head><title>ДЗ№3</title></head>
 	<body>
 		<script>
+		    var NR_SYM = "\n\r", N_SYM = "\n";	
 			function simpleNum(n){
-				var j, k, s="\n", i =0;
+				var j, k, s=NR_SYM, i =0;
 				while(i<=n) {
 					k = 0;
 					for(j=1;j<=i;j++) {
@@ -13,10 +13,7 @@
 						}
 					}
 					if(k==2) {
-						if (s!="")
-						{
-							s += ", ";
-						}
+						if (s!=NR_SYM) {s += ", ";}
 						s += i;
 					}
 					i++;
@@ -25,9 +22,9 @@
 			}
 			
 			function evenNum(n) {
-				var i = 1, s="\n 0 – это ноль";
+				var i = 1, s=NR_SYM+"0 – это ноль";
 				do {
-					s += "\n " + i + " – ";
+					s += N_SYM + i + " – ";
 					if (i % 2 != 0)
 					{
 						s += "не";
@@ -38,27 +35,28 @@
 				return s;		
 			}
 			
-			function forNoBody(n) {
-				var s="\n",i;
+			function numNoBody(n) {
+				var s=NR_SYM,i;
 				for(i=0;i<=n;s+=" "+i++);
 				return s;
 			}
 			
 			function pyramid(n) {
-				var s = "\n", i, j;
+				var s = NR_SYM, i, j;
 				for(i=1;i<=n;i++) {
 					for(j=1;j<=i;j++) {
 						s += "x";
 					}
-					s += "\n";
+					s += N_SYM;
 				}
 				return s;
 			}
-			
-			console.log("Задание №1. Простые числа"+simpleNum(100));
-			console.log("Задание №2. Четные и нечетные числа"+evenNum(10));
-			console.log("Задание №3. Вывод не в теле"+forNoBody(9));
-			console.log("Задание №4. Пирамида" + pyramid(20));
+
+			alert("Задание №1. Простые числа"+simpleNum(100));
+			alert("Задание №2. Четные и нечетные числа"+evenNum(10));
+			alert("Задание №3. Вывод не в теле"+numNoBody(9));
+			alert("Задание №4. Пирамида" + pyramid(20));
+
 		</script>
 	</body>
 </html>
