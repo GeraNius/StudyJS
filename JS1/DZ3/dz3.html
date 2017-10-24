@@ -1,0 +1,64 @@
+<html>
+	<head>		
+	</head>
+	<body>
+		<script>
+			function simpleNum(n){
+				var j, k, s="\n", i =0;
+				while(i<=n) {
+					k = 0;
+					for(j=1;j<=i;j++) {
+						if (i % j == 0) {
+							k++;
+						}
+					}
+					if(k==2) {
+						if (s!="")
+						{
+							s += ", ";
+						}
+						s += i;
+					}
+					i++;
+				}
+				return s;				
+			}
+			
+			function evenNum(n) {
+				var i = 1, s="\n 0 – это ноль";
+				do {
+					s += "\n " + i + " – ";
+					if (i % 2 != 0)
+					{
+						s += "не";
+					}
+					s += "четное число";
+					i++;
+				} while (i<=n)
+				return s;		
+			}
+			
+			function forNoBody(n) {
+				var s="\n",i;
+				for(i=0;i<=n;s+=" "+i++);
+				return s;
+			}
+			
+			function pyramid(n) {
+				var s = "\n", i, j;
+				for(i=1;i<=n;i++) {
+					for(j=1;j<=i;j++) {
+						s += "x";
+					}
+					s += "\n";
+				}
+				return s;
+			}
+			
+			console.log("Задание №1. Простые числа"+simpleNum(100));
+			console.log("Задание №2. Четные и нечетные числа"+evenNum(10));
+			console.log("Задание №3. Вывод не в теле"+forNoBody(9));
+			console.log("Задание №4. Пирамида" + pyramid(20));
+		</script>
+	</body>
+</html>
