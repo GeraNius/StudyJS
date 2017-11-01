@@ -1,0 +1,40 @@
+td, tr, table {
+			margin: 0;
+			border: 0;
+			padding: 0;
+			text-align: center;
+			font-weight: 800;
+		}
+		.cell {
+			height: 60px;
+			width: 60px;
+			font-size: 40px; 
+		}
+		.dark {
+			background-color: #623B2A;
+		}
+		.light {
+			background-color: #c39367;
+		}
+		.canva {
+			background-color: #E04E39;
+			color: #623B2A;
+		}
+		.angle {
+			height: 20px;
+			width: 20px;
+		}	
+		.letter {
+			height: 20px;
+			width: 60px;
+		}
+		.digit {
+			height: 60px;
+			width: 20px;
+		}
+		.rev {
+			transform: rotate(180deg);
+		}
+		.pwhite {			
+			color:  #FFFFFF;
+		}
