@@ -1,7 +1,8 @@
 td, tr, table {
-			margin: 0;
-			border: 0;
-			padding: 0;
+			margin: 0px;
+			border: 0px;
+			border-spacing: 0px;
+			padding: 0px;
 			text-align: center;
 			font-weight: 800;
 		}
@@ -17,7 +18,7 @@ td, tr, table {
 			background-color: #c39367;
 		}
 		.canva {
-			background-color: #E04E39;
+			background-color: rgba(224, 78, 57, 0.8);/*#E04E39;*/
 			color: #623B2A;
 		}
 		.angle {
