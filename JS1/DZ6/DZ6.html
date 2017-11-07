@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ДЗ №6</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="content">
+        <div id="big_picture"></div>
+        <div id="gallery">
+            <div id="left" class="content"><img id="left" src="img/gallery/left.jpg" height="240" onclick="movePics('left')"></div>
+            <div class="content"><img class="goods"><p class="nameprice"></p><img src="img/gallery/buybtn.jpg" onclick="fillBasket(1)"></div>
+            <div class="content"><img class="goods"><p class="nameprice"></p><img src="img/gallery/buybtn.jpg" onclick="fillBasket(2)"></div>
+            <div class="content"><img class="goods"><p class="nameprice"></p><img src="img/gallery/buybtn.jpg" onclick="fillBasket(3)"></div>
+            <div id="right" class="content"><img id="right" src="img/gallery/right.jpg" height="240" onclick="movePics('right')"></div> 
+        </div>
+    </div>
+    <div id="basket" class="content"></div>
+</body>
+<script src="dzgallery.js"></script>
+
+</html>

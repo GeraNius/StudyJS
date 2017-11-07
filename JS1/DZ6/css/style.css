@@ -1,0 +1,39 @@
+.content {
+    display: inline-block;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+    background-color: #cee2d3;
+}
+
+#big_picture {
+    align-items: center;
+    height: 410px;
+}
+
+.goods{
+	border: 2px solid #FFFFFF;
+}
+
+#basket {
+    background-color: #cee2d3;
+    vertical-align: top;
+    width: 200px;
+}
+
+.basket, .nameprice {
+    color: white;
+}
+
+.basket {
+    text-align: center;
+    font-weight: 800;
+}
+
+.nameprice {
+    text-align: right;
+    margin-right: 5px;
+
+}
